@@ -21,7 +21,7 @@ Le programme [capteur_temperature.ino](../../arduino//capteur_temperature/capteu
 - chaque mesure de la température est réalisée à partir de la tension sur A0 et est envoyée sur la liaison série juste après sa réalisation. La série se termine par l'envoi du mot `end`.
 
 ## Code python
-Le [programme _python_](../../tests/mesure_temperature.py):
+Le [programme _python_](../../tests_pyduino/mesure_temperature.py):
 - envoie la commande parmi `mesure` sur la liaison série.
 - recupère les données lues sur la liaison série.
 - affiche le graphe $\theta = f(t)$ 
@@ -35,7 +35,7 @@ Le [programme _python_](../../tests/mesure_temperature.py):
 <img src='data/image_1.png' style='width:800px'>
 
 
-- Avec _Jupyter_ en utilisant `juduino`
+- Avec _Jupyter_ en utilisant `juduino` un exemple de mesures sous _Jupyter_ est donné dans le notebook [tests_juduino/test_temperature_tempo.ipynb](../../tests_juduino/test_temperature_tempo.ipynb)
 
 <img src='data/image_2.png'>
 

@@ -25,7 +25,7 @@ Voir à cet effet les commentaires dans le code source [capteur_us](../../arduin
 
 ### Code python
 
-Algorithme du code _python_ [ultrasons_mesure.py](../../tests/ultrasons_mesure.py) :
+Algorithme du code _python_ [ultrasons_mesure.py](../../tests_pyduino/ultrasons_mesure.py) :
 
 - Tant qu'il y a des points à mesurer, le programme:
     - demande à l'utilisateur la valeur $d$ de la distance capteur_us-écran en cm.
@@ -44,3 +44,9 @@ Algorithme du code _python_ [ultrasons_mesure.py](../../tests/ultrasons_mesure.p
 ### Exemple d'utilisation
 
 Le protocole [tp_ultrasons.md](exemple_TP/tp_ultrasons.md) et le notebook [ultrasons_traitement.ipynb](exemple_TP/ultrasons_traitement.ipynb) et proposent un exemple de traitement des données qui peut servir de base pour un TP. Il s'agit de déterminer la célérité du son dans l'air avec évaluation des incertitudes de mesures et d'appliquer ce résultat à la réalisation d'un radar de recul.
+
+**Remarque**
+
+Si vous utilisez _Jupyter_ et `juduino` un exemple de mesures sous _Jupyter_ est donné dans le notebook [tests_juduino/ultrasons_mesures.ipynb](../../tests_juduino/ultrasons_mesures.ipynb)
+
+

@@ -27,7 +27,7 @@ Voir à cet effet les commentaires dans le code source [capteur_us_tempo](../../
 
 ### Code python
 
-Algorithme du code _python_ [ultrasons_mesure_tempo.py](../../tests/ultrasons_mesure_tempo.py) :
+Algorithme du code _python_ [ultrasons_mesure_tempo.py](../../tests_pyduino/ultrasons_mesure_tempo.py) :
 
 Le programme:
 - envoie la commande `mesure`sur la liaison série.
@@ -48,6 +48,6 @@ Le notebook [ultrasons_tempo_traitement.ipynb](ultrasons_tempo_traitement.ipynb)
 
 **Remarque**
 
-Si vous utilisez `juduino` un exemple de mesures avec Jupyter est donné dans le notebook ...
+Si vous utilisez _Jupyter_ et `juduino` un exemple de mesures sous _Jupyter_ est donné dans le notebook [tests_juduino/test_ultrasons_tempo.ipynb](../../tests_juduino/test_ultrasons_tempo.ipynb)
 
-**image à faire**
+![](data/image_1.png)

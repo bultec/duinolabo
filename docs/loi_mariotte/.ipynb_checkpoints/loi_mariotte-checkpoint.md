@@ -44,7 +44,7 @@ P = ...
 
 ### Code python
 
-Algorithme du code [programme _python_](../../tests/mariotte_mesure.py):
+Algorithme du code [programme _python_](../../tests_pyduino/mariotte_mesure.py):
 
 - Tant qu'il y a des points à mesurer, le programme:
     - demande à l'utilisateur la valeur $V$ du volume de gaz emprisonné.
@@ -59,6 +59,11 @@ Algorithme du code [programme _python_](../../tests/mariotte_mesure.py):
 ### Exemple de résultats
 
 <img src='data/image_10.png'>
+
+
+**Remarque**
+
+Si vous utilisez _Jupyter_ et `juduino` un exemple de mesures sous _Jupyter_ est donné dans le notebook [tests_juduino/pressions_mesures.ipynb](../../tests_juduino/pressions_mesures.ipynb)
 
 ### Exemple d'utilisation
 
