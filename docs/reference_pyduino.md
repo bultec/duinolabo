@@ -1,6 +1,8 @@
-## pyduino - utilitaire de mesures arduino.
+## Duinolab - pyduino - utilitaire de mesures arduino.
 
-Deux modes de fonctionnement:
+`pyduino` est un module qui simplifie considérablement la réalisation de _mesures temporelles_ ou _point par point_ à l'aide d'une carte _Arduino_.D
+
+Deux modes de fonctionnement sont disponibles:
             
 - Mode 1 : acquisition temporelle : il est possible de mesurer une ou plusieurs voies en fonction du temps et d'appliquer éventuellement une fonction de transfert.
     - en mode lent (arduino envoi des données entre chaque mesure)
