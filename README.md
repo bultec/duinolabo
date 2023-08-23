@@ -66,7 +66,7 @@ Un exemple de `mesures point par point` qui utilise directement les données mes
 
 ### Charge d'un condensateur 
 Un exemple de `mesure temporelles lentes ou rapides` conforme au programme de la spécialité physique-chimie en terminale.
-- le document utilisant _pyduino_ : [circuit_rc](./docs/circuit_rc/circuit_rc.md)
+- le document utilisant _pyduino_ : [circuit_rc](./docs/circuit_rc/circuit_RC.md)
 - en complément si vous avez installé `juduino` le document [./tests_juduino/test_circuit_rc.ipynb](./tests_juduino/test_circuit_rc.ipynb), est un bon exemple d'utilisation de Jupyter pour des mesures temporelles.
 
 ##### Vidéos de démonstration 
