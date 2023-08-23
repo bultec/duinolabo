@@ -40,7 +40,6 @@ Le [programme _python_](../../tests_pyduino/commande_leds.py):
 ### Code Jupyter
 
 Si vous avez installé `juduino` le document [./tests_juduino/test_command.ipynb](../../tests_juduino/test_command.ipynb) permet de prendre en main le sytème avec Jupyter
-- Avec _Jupyter_ en utilisant `juduino`
 
 #### Exemple d'exécution
 
