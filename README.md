@@ -48,7 +48,7 @@ GNU General Public License v3.0
 Un exemple simple pour commencer : le document [commande_leds](./docs/commande_leds/commande_leds.md) permet de prendre en main les bibliothèques `pyduino` et éventuellement `juiduino` en allumant des leds.
 
 ##### Vidéos de démonstration 
-- <a href="https://youtu.be/_3a9pBhJfTg" target ="_blank">Duinolab - Prise en main - Commande de leds</a>
+- [Duinolab - Prise en main - Commande de leds](https://youtu.be/_3a9pBhJfTg)
 - [Commandes de leds utilisant Jupyter sous Duinolab](https://youtu.be/RBvjX6vS28Q)
 
 ### Célérité des ultrasons dans l'air - version 1
@@ -97,7 +97,7 @@ Un exemple de `mesures point par point` qui utilise un capteur de pression et im
 ##### Vidéos de démonstration 
 
 - [Loi de Mariotte - Mesures de pression ponctuelles avec python](https://youtu.be/4NCDmyRRE9s)
-- ...
+- [Loi de Mariotte - Mesures de pression ponctuelles avec Jupyter](https://youtu.be/Q5pl0u9qzE4)
 
 ### Evolution de la température d'un corps en contact avec un thermostat
 Un exemple de `mesure temporelles lentes` qui utilise un capteur de température et implémente sa fonction de transfert. Conforme au programme de la spécialité physique-chimie en terminale.
@@ -106,14 +106,16 @@ Un exemple de `mesure temporelles lentes` qui utilise un capteur de température
 
 ##### Vidéos de démonstration 
 
-...
+- [Mesures temporelles de températures sous python](https://youtu.be/jKU0WSlJMjs)
+- [Mesures temporelles de températures sous Jupyter](https://youtu.be/XpT9Kb6uw1Q)
 
 ### Conservation et non conservation de l'énergie mécanique
 
-Un exemple de réalisation utilisant un capteur analogique monté sur un pendule pesant associé à une `mesure temporelle lente`.
+Un exemple de réalisation utilisant un capteur analogique monté sur un pendule pesant associé à une `mesure temporelle lente`. Conforme au programme de la spécialité physique-chimie en première.
 
-- le document utilisant `pyduino`
-- le document Jupyter utilisant `pyduino` et `juduino`
-- un exemple de TP complet testé avec des élèves
-    - avec python uniquement
-    - en utilisant Jupyter
+- le document utilisant `pyduino` : [energie_mecanique.md](./docs/energie_mecanique/energie_mecanique.md) détaille le protocole de la manipulation et contient un exemple de TP testé en classe.
+- en complément, si vous avez installé `juduino`, le document [...](./tests_juduino/pressions_mesures.ipynb) détaille ces mesures effectuées sous Jupyter.
+
+##### Vidéos de démonstration 
+
+...
