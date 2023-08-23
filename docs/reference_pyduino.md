@@ -91,15 +91,3 @@ Les mesures peuvent être stockées dans un fichier csv pour exploitation utéri
        finally:
           arduino.close()           
           
-#### Pour mémoire, mais déconseillé (conservé à titre d'exemple)
-
-##### mesures_points(message, affichage=None):
-    méthode de test conservée pour les débutants (voir le programme `mariotte_simple.py`) mais déconseillée car mas que des n'offre pas toutes les fonctionnalités
-    effectue des mesures point par point sur Arduino
-        entrée : message -> str : le message à afficher à la saisie de chaque point
-        affichage -> fonction (None par défaut)
-                     prend en paramètre le temps et un tuple contenant les voies.
-                     est appelée pendant les mesures pour affiche les données
-       sortie -> tuple : les listes (tableaux) de données mesurées
-                 exemple : def affiche(T):
-                           print('V = {:.1f} mL ; P = {:.2f} hPa'.format(T[0], T[1]))

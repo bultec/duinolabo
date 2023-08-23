@@ -31,6 +31,10 @@ class Interface:
                                        par exemple:  [('t', 's'), ('E', 'V'), ('uc', 'V')]
                                                      [('V', 'mL'), ('P', 'Pa')]
                  p_mode -> str : 'temporel' ou 'points'
+                 p_temps_reel -> bool :  Si p_temps_reel vaut True, le graphe est réaffiché à chaque nouvelle mesure. A utiliser dans le cas de mesures lentes.
+                                         Si p_temps_reel vaut False, le graphe est affiché à la fin des mesures. A utiliser dans le cas de mesures rapides.                     
+                 
+                 exemple : mon_interface = Interface('COM21', [('t', 's'), ('θ', '°C')], 'temporel', True)
         '''
         assert p_mode in ['temporel', 'points'], 'p_mode doit être égal à "temporel" ou "point"'
         # assert len(p_grandeurs)>=2, 'grandeurs doit contenir au moins 2 éléments'
@@ -64,6 +68,21 @@ class Interface:
         entrée : p_texte -> str : le texte qui s'affiche sur le bouton
                  p_command -> function : la fonction à exécuter lorsqu'on clique sur le bouton  
         sortie -> ipywidgets.widgets.widget_button.Button : widget contenant le bouton
+        
+        exemple :
+        mon_interface = Interface('COM21', [('t', 's'), ('θ', '°C')], 'temporel')
+        ...
+        def mesure():
+            # exécuté lorsque l'utilisateur clique sur le bouton 'Mesure'
+            global t, θ
+            t, θ = mon_interface.mesures_tempo('mesure', 1)
+        ...
+    
+        # --- programme principal
+        mon_interface.add_bouton('Mesure', mesure)
+        ...
+        mon_interface.affiche()    
+        
         '''
         l_widget = widgets.Button(description=p_texte)
         l_widget.on_click(lambda p: self.execute_command(p_command))
@@ -77,6 +96,7 @@ class Interface:
         entrée : p_description -> str : le texte de description de la zone de saisie
                  p_valeur -> str : la valeur par défaut dans la zone de saisie 
         sortie -> ipywidgets.widgets.widget_string.Text : widget contenant la zone de saisie
+        exemple : saisie = mon_interface.add_saisie('Nom Fichier', 'temperatures')
         '''
         l_widget = widgets.Text(value=p_valeur, description=p_description, disabled=False,
                                 style ={'description_width': 'initial'}, layout=widgets.Layout(width='200px'))
@@ -128,7 +148,15 @@ class Interface:
     def affiche(self):
         '''
         méthode publique
-        affiche le widget interface complet 
+        affiche le widget interface complet
+        
+        exemple :
+        mon_interface = Interface('COM21', [('t', 's'), ('θ', '°C')], 'temporel')
+        ...
+    
+        # --- programme principal
+        ...
+        mon_interface.affiche()   
         '''
         if self.mode == 'temporel':
             zone_1 = widgets.HBox(self.widgets + [self.zone_barre])
@@ -233,6 +261,9 @@ class Interface:
         méthode publique
         appelle la fonction set_command du module pyduino
         et récupère les mesures envoyées par Arduino sur la liaison série
+        
+        exemple: mon_interface = Interface('COM21')
+                 b = int(mon_interface.set_command('mesure'))
         '''
         return self.arduino.set_command(command)
     
@@ -240,6 +271,35 @@ class Interface:
         '''
         méthode publique
         ajoute un point de coordonnées x, y dans le cas de mesures ponctuelles
+        
+        exemple:
+        my_int_ponctuel = Interface('COM8', [('V', 'mL'), ('P', 'Pa')], 'points')
+
+        def mon_acquisition():
+            v = int(saisie.value)
+            p = float(my_int_ponctuel.set_command('mesure'))
+            print('V = {:.1f} mL ; P = {:.2f} hPa'.format(v, p))
+            my_int_ponctuel.ajoute_point(v, p)
+    
+        def supp_dernier_point():
+            if my_int_ponctuel.supprime_dernier_point():
+                print("Dernier point supprimé")
+            else:
+                print('Pas de dernier point')
+    
+        def sauvegarde():
+            fichier = nom_fic.value + '.csv'
+            V, P = my_int_ponctuel.get_valeurs()
+            ecrit_fichier_csv(fichier, V, P)
+            print('fichier {} créé'.format(fichier))
+    
+        # programme principal---    
+        saisie = my_int_ponctuel.add_saisie('V (mL)', '60')
+        my_int_ponctuel.add_bouton('Mesure', mon_acquisition)
+        my_int_ponctuel.add_bouton('Supp. dernier point', supp_dernier_point)
+        nom_fic = my_int_ponctuel.add_saisie('Nom fichier', 'mesures')
+        my_int_ponctuel.add_bouton('Sauvegarde', sauvegarde)
+        my_int_ponctuel.affiche()
         '''
         self.update([x, y])
      
@@ -247,6 +307,7 @@ class Interface:
         '''
         méthode publique
         supprime le dernier point ajouté dans le cas de mesures ponctuelles
+        exemple : voir Méthode ajoute_point(self, x, y)
         '''
         if len(self.voies[0]) > 0:
             self.update(-1)
@@ -260,6 +321,21 @@ class Interface:
         renvoir un tuple qui contient les tableaux de valeurs
         utile dans le cas de mesures ponctuelles pour récupérer les tableaux une fois la série terminée
         sortie -> tuple : les listes (tableaux) de données
+        
+        exemple:
+        my_int_ponctuel = Interface('COM8', [('V', 'mL'), ('P', 'Pa')], 'points')
+        ...
+        def sauvegarde():
+            fichier = nom_fic.value + '.csv'
+            V, P = my_int_ponctuel.get_valeurs()
+            ecrit_fichier_csv(fichier, V, P)
+            print('fichier {} créé'.format(fichier))
+    
+        # programme principal---    
+        ...
+        nom_fic = my_int_ponctuel.add_saisie('Nom fichier', 'mesures')
+        my_int_ponctuel.add_bouton('Sauvegarde', sauvegarde)
+        my_int_ponctuel.affiche()
         '''
         if len(self.voies) == 1:
             return self.voies[0]
