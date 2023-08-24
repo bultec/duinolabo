@@ -23,7 +23,7 @@ Les mesures peuvent être stockées dans un fichier csv pour exploitation ultér
 ## class Interface:
 La classe implémente sous jupyter une interface d'acquisition pour arduino utilisant le module pyduino
 
-### Constructeur __init__(self, p_port='', p_grandeurs=[], p_mode='points')
+### Constructeur __init__(self, p_port='', p_grandeurs=[], p_mode='points', p_temps_reel=True)
         initialise la classe
         entrée : p_port -> str : port série auquel est connecté arduino (voir la documentation de pyduino)
                  p_grandeurs -> list : tableau de tuple contenant les grandeurs à mesurer et leurs unités
@@ -31,7 +31,7 @@ La classe implémente sous jupyter une interface d'acquisition pour arduino util
                                                      [('V', 'mL'), ('P', 'Pa')]
                  p_mode -> str : 'temporel' ou 'points'
                  p_temps_reel -> bool :  Si p_temps_reel vaut True, le graphe est réaffiché à chaque nouvelle mesure. A utiliser dans le cas de mesures lentes.
-                                         Si p_temps_reel vaut False, le graphe est affiché à la fin des mesures. A utiliser dans le cas de mesures rapides.   
+                                         Si p_temps_reel vaut False, le graphe est affiché uniquement à la fin des mesures. A utiliser dans le cas de mesures rapides.   
                                          
                  exemple : mon_interface = Interface('COM21', [('t', 's'), ('θ', '°C')], 'temporel', True)
         

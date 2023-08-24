@@ -15,7 +15,7 @@ Capteur de température _Grove_ sur A0.
 
 ## Code arduino
 
-Le programme [capteur_temperature.ino](../../arduino//capteur_temperature/capteur_temperature.ino)
+Le programme [capteur_temperature.ino](../../arduino/capteur_temperature/capteur_temperature.ino)
 
 - attend l'arrivée d'une commande (`mesure`) sur la liaison série et réagit en conséquence:
 - chaque mesure de la température est réalisée à partir de la tension sur A0 et est envoyée sur la liaison série juste après sa réalisation. La série se termine par l'envoi du mot `end`.

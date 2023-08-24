@@ -109,12 +109,14 @@ Un exemple de `mesure temporelles lentes` qui utilise un capteur de température
 - [Mesures temporelles de températures sous python](https://youtu.be/jKU0WSlJMjs)
 - [Mesures temporelles de températures sous Jupyter](https://youtu.be/XpT9Kb6uw1Q)
 
-### Conservation et non conservation de l'énergie mécanique
+### Conservation et non conservation de l'énergie mécanique (en cours de rédaction)
 
 Un exemple de réalisation utilisant un capteur analogique monté sur un pendule pesant associé à une `mesure temporelle lente`. Conforme au programme de la spécialité physique-chimie en première.
 
 - le document utilisant `pyduino` : [energie_mecanique.md](./docs/energie_mecanique/energie_mecanique.md) détaille le protocole de la manipulation et contient un exemple de TP testé en classe.
-- en complément, si vous avez installé `juduino`, le document [...](./tests_juduino/pressions_mesures.ipynb) détaille ces mesures effectuées sous Jupyter.
+- en complément, si vous avez installé `juduino`, le document [...](...) détaille ces mesures effectuées sous Jupyter.
+- un exemple de TP complet testé avec des élèves [...](...)
+
 
 ##### Vidéos de démonstration 
 
