@@ -48,7 +48,7 @@ GNU General Public License v3.0
 Un exemple simple pour commencer : le document [commande_leds](./docs/commande_leds/commande_leds.md) permet de prendre en main les bibliothèques `pyduino` et éventuellement `juiduino` en allumant des leds.
 
 ##### Vidéos de démonstration 
-- [Duinolab - Prise en main - Commande de leds](https://youtu.be/_3a9pBhJfTg)
+- [Duinolab - Prise en main - Commande de leds](https://youtu.be/ylRu36BADV0?si=N6qFN60a0jkB5NF6)
 - [Commandes de leds utilisant Jupyter sous Duinolab](https://youtu.be/RBvjX6vS28Q)
 
 ### Célérité des ultrasons dans l'air - version 1

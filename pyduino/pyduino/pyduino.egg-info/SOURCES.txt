@@ -1,6 +1,5 @@
 pyproject.toml
 setup.cfg
-pyduino/__init__.py
 pyduino/pyduino.py
 pyduino/pyduino.egg-info/PKG-INFO
 pyduino/pyduino.egg-info/SOURCES.txt

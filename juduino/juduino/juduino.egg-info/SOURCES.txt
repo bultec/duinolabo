@@ -1,6 +1,5 @@
 pyproject.toml
 setup.cfg
-juduino/__init__.py
 juduino/juduino.py
 juduino/juduino.egg-info/PKG-INFO
 juduino/juduino.egg-info/SOURCES.txt
