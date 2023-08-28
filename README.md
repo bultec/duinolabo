@@ -61,8 +61,8 @@ Un exemple de `mesures point par point` qui utilise directement les données mes
 
 ##### Vidéos de démonstration 
 
-- [Célérité des ultrasons - Mesures ponctuelles avec python](https://youtu.be/_KrFAKGbEFg)
-- [Célérité des ultrasons - Mesures ponctuelles avec Jupyter](https://youtu.be/HTpirr2IGkM)
+- [Célérité des ultrasons - Mesures ponctuelles avec python](https://youtu.be/b0E0GAu-kEI)
+- [Célérité des ultrasons - Mesures ponctuelles avec Jupyter](https://youtu.be/Cjb4Xy14cHE)
 
 ### Charge d'un condensateur 
 Un exemple de `mesure temporelles lentes ou rapides` conforme au programme de la spécialité physique-chimie en terminale.
