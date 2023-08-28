@@ -1,9 +1,9 @@
 
 ## Duinolab - juduino  - mesures arduino sous Jupyter
 
-`juduino` permet de créer très simplement des systèmes d'interfaces de mesures graphiques sous jupyter en utilisant le module `pyduino`.
+`juduino` permet de créer très simplement des systèmes d'interfaces de mesures graphiques sous jupyter en utilisant le module `pduino`.
 
-Comme `pyduino`, `judiuno` permet deux modes de fonctionnement:
+Comme `pduino`, `judiuno` permet deux modes de fonctionnement:
             
 - Mode 1 : acquisition temporelle : il est possible de mesurer une ou plusieurs voies en fonction du temps et d'appliquer éventuellement une fonction de transfert.
     - en mode lent (arduino envoie des données entre chaque mesure)
@@ -21,11 +21,11 @@ Les mesures peuvent être stockées dans un fichier csv pour exploitation ultér
 # Fonctions publiques disponibles
 
 ## class Interface:
-La classe implémente sous jupyter une interface d'acquisition pour arduino utilisant le module pyduino
+La classe implémente sous jupyter une interface d'acquisition pour arduino utilisant le module pduino
 
 ### Constructeur __init__(self, p_port='', p_grandeurs=[], p_mode='points', p_temps_reel=True)
         initialise la classe
-        entrée : p_port -> str : port série auquel est connecté arduino (voir la documentation de pyduino)
+        entrée : p_port -> str : port série auquel est connecté arduino (voir la documentation de pduino)
                  p_grandeurs -> list : tableau de tuple contenant les grandeurs à mesurer et leurs unités
                                        par exemple:  [('t', 's'), ('E', 'V'), ('uc', 'V')]
                                                      [('V', 'mL'), ('P', 'Pa')]
@@ -75,7 +75,7 @@ La classe implémente sous jupyter une interface d'acquisition pour arduino util
         mon_interface.affiche()   
                 
 ### Méthode mesures_tempo(self, chaine, n, affichage=None, fs=[])
-        appelle la fonction mesures_tempo du module pyduino
+        appelle la fonction mesures_tempo du module pduino
         et récupère les mesures envoyées par Arduino sur la liaison série
         entrée : chaine -> str : la commande à envoyer à Arduino
                 fonctions -> list de fonctions (vide par défaut)
@@ -89,7 +89,7 @@ La classe implémente sous jupyter une interface d'acquisition pour arduino util
                  t, E, uc = mon_interface.mesures_tempo('charge', [lambda x: 5.0*x/1023, lambda x: 5.0*x/1023])
     
 ### Méthode set_command(self, command=''):
-        appelle la fonction set_command du module pyduino
+        appelle la fonction set_command du module pduino
         et récupère les mesures envoyées par Arduino sur la liaison série
         
         exemple: mon_interface = Interface('COM21')

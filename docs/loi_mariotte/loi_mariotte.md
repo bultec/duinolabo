@@ -40,11 +40,11 @@ b = int(arduino.set_command('mesure'))
 P = ...
 ```
 
-**Remarque** Si nécessaire, la fonction `command` de la bibliothèque `pyduino` permet d'appliquer directement une fonction à la valeur lue sur la liaison série.
+**Remarque** Si nécessaire, la fonction `command` de la bibliothèque `pduino` permet d'appliquer directement une fonction à la valeur lue sur la liaison série.
 
 ### Code python
 
-Algorithme du code [programme _python_](../../tests_pyduino/mariotte_mesure.py):
+Algorithme du code [programme _python_](../../tests_pduino/mariotte_mesure.py):
 
 - Tant qu'il y a des points à mesurer, le programme:
     - demande à l'utilisateur la valeur $V$ du volume de gaz emprisonné.

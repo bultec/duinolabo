@@ -1,7 +1,7 @@
 ## Célérité des ultrasons dans l'air - Mesures temporelles
 
 Le capteur us grove est relié au **pin 4** par exemple. 
-Cet exemple de `mesures temporelles rapides` à l'aide de la bibliothèque `pyduino` permet de déterminer la célérité des ultrasons dans l'air en traçant l'évolution de l'état du **pin 4** en fonction du temps.
+Cet exemple de `mesures temporelles rapides` à l'aide de la bibliothèque `pduino` permet de déterminer la célérité des ultrasons dans l'air en traçant l'évolution de l'état du **pin 4** en fonction du temps.
 
 **Important**
 
@@ -27,7 +27,7 @@ Voir à cet effet les commentaires dans le code source [capteur_us_tempo](../../
 
 ### Code python
 
-Algorithme du code _python_ [ultrasons_mesure_tempo.py](../../tests_pyduino/ultrasons_mesure_tempo.py) :
+Algorithme du code _python_ [ultrasons_mesure_tempo.py](../../tests_pduino/ultrasons_mesure_tempo.py) :
 
 Le programme:
 - envoie la commande `mesure`sur la liaison série.

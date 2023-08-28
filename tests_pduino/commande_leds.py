@@ -1,6 +1,6 @@
 '''
 Name:       commande_leds
-Purpose:    démo de la fonction set_command de la bibliothèque pyduino
+Purpose:    démo de la fonction set_command de la bibliothèque pduino
             fonctionne avec le programme arduino leds
             commandes dispos: rouge, verte, stop
 Copyright (C) 2023 Philippe Campion
@@ -24,7 +24,7 @@ Schéma du montage
      GND     GND 
 '''
 
-from pyduino import *
+from pduino import *
 
 # modifiez le port COM en fonction de votre configuration
 port = 'COM21'

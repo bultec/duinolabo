@@ -1,4 +1,4 @@
-/* mesure de la célérité des ultrasons par réception de commande envoyée par la bibiothèque pyduino.py 
+/* mesure de la célérité des ultrasons par réception de commande envoyée par la bibiothèque pduino.py 
  * pour obtenir des mesures rapides, le temps ainsi que les valeurs de l'état du pin 4 sont stockées
  * puis envoyées sur la liaison série après la boucle de mesures
  * montage: capteur ultrasons sur pin 4

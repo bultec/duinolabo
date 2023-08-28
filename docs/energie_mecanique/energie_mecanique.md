@@ -4,7 +4,7 @@
 
 #### Important
 
-Comme dans tous les exemples utilisant `pyduino` le dialogue entre le programme _python_ et la carte _arduino_  doit impérativement suivre le protocole suivant:
+Comme dans tous les exemples utilisant `pduino` le dialogue entre le programme _python_ et la carte _arduino_  doit impérativement suivre le protocole suivant:
 
 - le programme _python_ envoie une commande sous forme de chaine de caractères sur la liaison série.
 - le programme _arduino_ reçoit la commande, la traite et envoie une réponse sur la liaison série.
@@ -24,7 +24,7 @@ Le programme [pendule.ino](../../arduino/pendule/pendule.ino)
 
 ## Code python
 Le [programme _python_](../../tests/mesure_temperature.py):
-- envoie la commande parmi `mesure` sur la liaison série.
+- envoie la commande `mesure` sur la liaison série.
 - recupère les données lues sur la liaison série.
 - affiche le graphe $\theta = f(t)$ 
 - à la fermeture du graphe, une sauvegarde des données sous forme de fichier csv est proposée.

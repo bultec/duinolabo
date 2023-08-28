@@ -1,4 +1,4 @@
-/* allumage de leds par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* allumage de leds par réception de commandes envoyées par la bibiothèque pduino.py 
  * une led rouge (en série avec une résistance de 220 ohms) sur le pin 4
  * une led verte (en série avec une résistance de 220 ohms) sur le pin 5
  * commandes acceptées: rouge, verte, stop
@@ -32,7 +32,7 @@ void setup() {
 void loop() {
   /* la boucle attend une commande reçue sur la liaison série,
    * réagit en conséquence (allume ou éteint les leds)
-   * et renvoie un message (indispensable car la bibliothèque pyduino attend une réponse)
+   * et renvoie un message (indispensable car la bibliothèque pduino attend une réponse)
    */
   if (Serial.available()) {
     String chaine = Serial.readString();

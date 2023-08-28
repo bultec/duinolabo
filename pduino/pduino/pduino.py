@@ -1,5 +1,5 @@
 '''
-Name:       pyduino
+Name:       pduino
 Version     V 1.0.0
 Purpose:    utilitaires de mesures arduino
             Mode 1: acquisition temporelle

@@ -17,7 +17,7 @@ from scipy.stats import linregress
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-from pyduino import lit_fichier
+from pduino import lit_fichier
 
 # Lit le fichier de mesures et le stocke dans des tableaux
 V, P = np.array(lit_fichier('mesures_P.csv'))

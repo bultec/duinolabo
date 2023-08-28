@@ -1,4 +1,4 @@
-/* mesures de la célérité des ultrasons par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* mesures de la célérité des ultrasons par réception de commandes envoyées par la bibiothèque pduino.py 
  * montage: capteur ultrasons grove sur pin 4
  * commande acceptée: mesure
  * à la réception de la commande "mesure", le programme envoie le temps de parcours

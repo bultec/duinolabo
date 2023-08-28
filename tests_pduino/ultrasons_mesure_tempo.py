@@ -7,7 +7,7 @@ Purpose:     lecture de données mesurées en fontion du temps
 Copyright (C) 2023 Philippe Campion
 License    GNU GENERAL PUBLIC LICENSE Version 3
 '''
-from pyduino import *
+from pduino import *
 
 port = 'COM30'
 

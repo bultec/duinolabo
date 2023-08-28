@@ -2,12 +2,12 @@
 Name:        ultrason_mesure
 Purpose:     lecture du temps de parcours d'une onde ultrasonore
              par le programme capteur_us.ino
-             utilisation de la bibliothèque pyduino
+             utilisation de la bibliothèque pduino
 Copyright (C) 2023 Philippe Campion
 License    GNU GENERAL PUBLIC LICENSE Version 3
 '''
 
-from pyduino import *
+from pduino import *
 
 # modifiez le port COM en fonction de votre configuration
 port ='COM8'

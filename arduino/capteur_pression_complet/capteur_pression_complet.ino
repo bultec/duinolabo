@@ -1,4 +1,4 @@
-/* mesures de pressions par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* mesures de pressions par réception de commandes envoyées par la bibiothèque pduino.py 
  * montage: capteur pression grove sur A1, ref sur 5,0 V
  * commande acceptée: mesure
 */

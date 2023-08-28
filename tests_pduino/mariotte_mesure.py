@@ -1,7 +1,7 @@
 '''
 Name:        mariotte_mesure
 Purpose:     lecture de pressions par le programme mariotte.ino
-             utilisation de la bibliothèque pyduino
+             utilisation de la bibliothèque pduino
 Copyright (C) 2023 Philippe Campion
 License    GNU GENERAL PUBLIC LICENSE Version 3
 '''
@@ -9,7 +9,7 @@ License    GNU GENERAL PUBLIC LICENSE Version 3
 import matplotlib.pyplot as plt
 import time
 
-from pyduino import *
+from pduino import *
 
 # modifiez le port COM en fonction de votre configuration
 port ='COM8'

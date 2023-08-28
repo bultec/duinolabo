@@ -1,10 +1,10 @@
 # Mesures de tempérarure - loi phénoménologique de Newton
 
-L'évolution de la température d'un corps au contact d'un thermostat permet d'illustrer les possibilité des mesures temporelle offertes par la biblothèque `pyduino`.
+L'évolution de la température d'un corps au contact d'un thermostat permet d'illustrer les possibilité des mesures temporelle offertes par la biblothèque `pduino`.
 
 #### Important
 
-Comme dans tous les exemples utilisant `pyduino` le dialogue entre le programme _python_ et la carte _arduino_  doit impérativement suivre le protocole suivant:
+Comme dans tous les exemples utilisant `pduino` le dialogue entre le programme _python_ et la carte _arduino_  doit impérativement suivre le protocole suivant:
 
 - le programme _python_ envoie une commande sous forme de chaine de caractères sur la liaison série.
 - le programme _arduino_ reçoit la commande, la traite et envoie une réponse sur la liaison série.
@@ -21,7 +21,7 @@ Le programme [capteur_temperature.ino](../../arduino/capteur_temperature/capteur
 - chaque mesure de la température est réalisée à partir de la tension sur A0 et est envoyée sur la liaison série juste après sa réalisation. La série se termine par l'envoi du mot `end`.
 
 ## Code python
-Le [programme _python_](../../tests_pyduino/mesure_temperature.py):
+Le [programme _python_](../../tests_pduino/mesure_temperature.py):
 - envoie la commande parmi `mesure` sur la liaison série.
 - recupère les données lues sur la liaison série.
 - affiche le graphe $\theta = f(t)$ 

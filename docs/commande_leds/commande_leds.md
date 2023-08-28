@@ -1,6 +1,6 @@
 ## Commande de leds - Mode d'emploi
 
-Cet exemple simple permet de prendre en main la bibliothèque `pyduino`.  Il s'agit de commander l'allumage de deux leds grâce à un script _python_.
+Cet exemple simple permet de prendre en main la bibliothèque `pduino`.  Il s'agit de commander l'allumage de deux leds grâce à un script _python_.
 
 **Important**
 
@@ -26,7 +26,7 @@ Voir à cet effet les commentaires dans le code source [leds.ino](../../arduino/
 
 ### Code python
 
-Le [programme _python_](../../tests_pyduino/commande_leds.py):
+Le [programme _python_](../../tests_pduino/commande_leds.py):
 - envoie une commande parmi `rouge`, `verte`ou `stop` sur la liaison série à la demande de l'utilisateur.
 - affiche la réponse envoyée par la carte.
 

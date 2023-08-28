@@ -1,4 +1,4 @@
-/* charge d'un condensateur par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* charge d'un condensateur par réception de commandes envoyées par la bibiothèque pduino.py 
  * pour obtenir une charge rapide, les données sont stockées
  * et envoyées sur la liaison série après la boucle de mesures sous forme de float de 0 à 5,0 V
  * montage: - un condensateur en série avec une résistance relié au +5V par l'intermédiare d'un bouton

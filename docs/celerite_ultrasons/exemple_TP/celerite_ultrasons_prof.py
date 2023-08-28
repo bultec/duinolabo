@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import linregress
 import matplotlib.ticker as ticker
-from pyduino import *
+from pduino import *
 
 # #### lecture du fichier de mesures et évaluation des incertitudes
 d, dt = np.array(lit_fichier('mesures_us.csv'))

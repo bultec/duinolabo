@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: pduino
+Version: 0.0.dev2
+Summary: Communication serie avec une carte Arduino
+Author: Philippe Campion
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
 # Duinolab
 
 `Duinolab` est un module à destination des enseignants de physique chimie et de biologie qui permet la réalisation sous _python_ de systèmes de mesures utilisant la carte _Arduino_.
@@ -13,6 +28,7 @@ Sans remplacer un oscilloscope ou une interface de mesures, le système peut né
 Dans la mesure où toutes les activités sont basées sur le même modèle, (en particulier avec `juduino` sous Jupyter), les élèves, conformément au B.O. Français, se familiarisent rapidement avec l'environnement _python_ pour analyser leurs résultats.
 
 Sont également fournis plusieurs exemples documentés, fonctionnels et testés avec des élèves, applicables au programme Français de sciences physiques dans les classes de lycée.
+
 
 ## Installation
 

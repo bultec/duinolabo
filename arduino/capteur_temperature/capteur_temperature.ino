@@ -1,4 +1,4 @@
-/* mesures de température  par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* mesures de température  par réception de commandes envoyées par la bibiothèque pduino.py 
  * montage: capteur température grove sur A0
  * ref sur 5,0V
  * commandes acceptées: mesure , stop 

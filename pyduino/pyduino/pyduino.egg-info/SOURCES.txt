@@ -1,8 +1,0 @@
-pyproject.toml
-setup.cfg
-pyduino/pyduino.py
-pyduino/pyduino.egg-info/PKG-INFO
-pyduino/pyduino.egg-info/SOURCES.txt
-pyduino/pyduino.egg-info/dependency_links.txt
-pyduino/pyduino.egg-info/requires.txt
-pyduino/pyduino.egg-info/top_level.txt

@@ -27,7 +27,7 @@ Schéma du montage
                                                  GND     GND
 '''
 
-from pyduino import *
+from pduino import *
 
 port = 'COM21'
 

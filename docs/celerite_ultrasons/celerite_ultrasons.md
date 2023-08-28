@@ -1,6 +1,6 @@
 ## Célérité des ultrasons dans l'air - Mode d'emploi
 
-Cet exemple de `mesures point par point` à l'aide de la bibliothèque `pyduino`  utilise directement les données mesurées par le capteur à ultrasons.
+Cet exemple de `mesures point par point` à l'aide de la bibliothèque `pduino`  utilise directement les données mesurées par le capteur à ultrasons.
 
 **Important**
 
@@ -25,7 +25,7 @@ Voir à cet effet les commentaires dans le code source [capteur_us](../../arduin
 
 ### Code python
 
-Algorithme du code _python_ [ultrasons_mesure.py](../../tests_pyduino/ultrasons_mesure.py) :
+Algorithme du code _python_ [ultrasons_mesure.py](../../tests_pduino/ultrasons_mesure.py) :
 
 - Tant qu'il y a des points à mesurer, le programme:
     - demande à l'utilisateur la valeur $d$ de la distance capteur_us-écran en cm.

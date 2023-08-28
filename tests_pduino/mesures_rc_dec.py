@@ -31,7 +31,7 @@ Schéma du montage
 import sys
 sys.path.insert(0, "..")
 
-from pyduino import *
+from pduino import *
 
 port = 'COM21'
 

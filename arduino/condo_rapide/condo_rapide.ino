@@ -1,4 +1,4 @@
-/* charge ou décharge d'un condensateur par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* charge ou décharge d'un condensateur par réception de commandes envoyées par la bibiothèque pduino.py 
  * pour obtenir une charge rapide, les données sont stockées
  * et envoyées sur la liaison série après la boucle de mesures
  * montage: - un condensateur en série avec  une résistance sur le pin 3

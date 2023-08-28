@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from pyduino import *
+from pduino import *
 
 port = 'COM34'
 

@@ -40,7 +40,7 @@ Valise *Arduino* contenant :
 - Une carte Arduino + capteurs *Groove*
 - Un capteur de pression
 - Une seringue munie d'un tube souple
-- Ordinateur muni du logiciel _Arduino_ et du langage Python avec la bibliothèque _pyduino_ installée.
+- Ordinateur muni du logiciel _Arduino_ et du langage Python avec la bibliothèque _pduino_ installée.
 
 
 <div class="alert alert-info">

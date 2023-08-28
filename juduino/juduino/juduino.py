@@ -2,7 +2,7 @@
 Name:        jupduino
 Version      V 1.0
 Purpose:     Réalisation d'interfaces de mesure simples utilisant une carte arduino sous jupyter
-             liaison simplifiée avec la bibliothèque pyduino
+             liaison simplifiée avec la bibliothèque pduino
              Mode 1: acquisition temporelle
              Mode 2: acquisition point par point
 
@@ -16,17 +16,17 @@ sys.path.insert(0, "..")
 
 import ipywidgets as widgets
 from IPython.display import display, clear_output
-from pyduino import *
+from pduino import *
 from copy import deepcopy
 
 class Interface:
     '''
-    La classe implémente sous jupyter une interface d'acquisition pour arduino utilisant le module pyduino
+    La classe implémente sous jupyter une interface d'acquisition pour arduino utilisant le module pduino
     '''
     def __init__(self, p_port='', p_grandeurs=[], p_mode='points', p_temps_reel=True): # temporel ou points
         '''
         initialise la classe
-        entrée : p_port -> str : port série auquel est connecté arduino (voir la documentation de pyduino)
+        entrée : p_port -> str : port série auquel est connecté arduino (voir la documentation de pduino)
                  p_grandeurs -> list : tableau de tuple contenant les grandeurs à mesurer et leurs unités
                                        par exemple:  [('t', 's'), ('E', 'V'), ('uc', 'V')]
                                                      [('V', 'mL'), ('P', 'Pa')]
@@ -107,7 +107,7 @@ class Interface:
         '''
         méthode privée
         mise à jour des données affichées par l'interface
-         - dans le cas de mesure temporelles, est passée par défaut comme argument à la fonction mesure_tempo de pyduino
+         - dans le cas de mesure temporelles, est passée par défaut comme argument à la fonction mesure_tempo de pduino
            par la fonction self.mesures_tempo
          - dans le cas de mesures par points, doit être appelée à chaque mesure par les fonctions self.ajoute_point
            et self.supprime_dernier_point
@@ -241,7 +241,7 @@ class Interface:
     def mesures_tempo(self, chaine, n, affichage=None, fs=[]):
         '''
         méthode publique
-        appelle la fonction mesures_tempo du module pyduino
+        appelle la fonction mesures_tempo du module pduino
         et récupère les mesures envoyées par Arduino sur la liaison série
         entrée : chaine -> str : la commande à envoyer à Arduino
                 fonctions -> list de fonctions (vide par défaut)
@@ -259,7 +259,7 @@ class Interface:
     def set_command(self, command=''):
         '''
         méthode publique
-        appelle la fonction set_command du module pyduino
+        appelle la fonction set_command du module pduino
         et récupère les mesures envoyées par Arduino sur la liaison série
         
         exemple: mon_interface = Interface('COM21')

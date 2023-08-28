@@ -1,4 +1,4 @@
-/* charge d'un condensateur par réception de commandes envoyées par la bibiothèque pyduino.py 
+/* charge d'un condensateur par réception de commandes envoyées par la bibiothèque pduino.py 
  * montage: - un condensateur en série avec une résistance relié au +5V par l'intermédiare d'un bouton
  *            constante de temps d'environ 1,1 s avec les valeurs par défaut 
  *          - circuit de déclenchement sur pin 7  

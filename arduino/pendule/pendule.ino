@@ -1,5 +1,5 @@
 /* Mesure de l'angle d'un pendule pesant en fonction du temps par réception de commande envoyée
- * par la bibiothèque pyduino.py 
+ * par la bibiothèque pduino.py 
  * montage: - un pendule pesant avec capteur d'angle analogique sur le pin 2 
  *          - pour la visualisation, une led (en série avec une résistance de 220 ohms) sur le pin 5                                                                               
                    Pin 2
@@ -60,7 +60,6 @@ void mesures() {
 void loop() {
   if (Serial.available()) {
     String chaine = Serial.readString();
-    String message = "";
     if (chaine=="mesures") {
       mesures();          
     }

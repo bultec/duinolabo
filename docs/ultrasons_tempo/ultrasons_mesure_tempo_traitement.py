@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from pyduino import lit_fichier
+from pduino import lit_fichier
 import numpy as np
 
 def recherche_front_montant(t, E):
