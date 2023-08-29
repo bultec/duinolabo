@@ -85,8 +85,8 @@ Un exemple de `mesure temporelles très rapides` conforme au programme de physiq
 
 ##### Vidéos de démonstration 
 
-- [Célérité des ultrasons - Mesures temporelles rapides avec python](https://youtu.be/qNqNN1UG0RQ)
-- [Célérité des ultrasons - Mesures temporelles rapides avec Jupyter](https://youtu.be/SojFFGGwAUs)
+- [Célérité des ultrasons - Mesures temporelles rapides avec python](https://youtu.be/hFFfyKpyjAI?si=sj6GxtPjxv22Pzwk)
+- [Célérité des ultrasons - Mesures temporelles rapides avec Jupyter](https://youtu.be/zmUIsWZbqgs?si=ddo_OSdLHClMzjvj)
 
 ### Mesures de pressions
 Un exemple de `mesures point par point` qui utilise un capteur de pression et implémente sa fonction de transfert. Conforme au programme de la spécialité physique-chimie en première.
@@ -96,8 +96,8 @@ Un exemple de `mesures point par point` qui utilise un capteur de pression et im
 
 ##### Vidéos de démonstration 
 
-- [Loi de Mariotte - Mesures de pression ponctuelles avec python](https://youtu.be/4NCDmyRRE9s)
-- [Loi de Mariotte - Mesures de pression ponctuelles avec Jupyter](https://youtu.be/Q5pl0u9qzE4)
+- [Loi de Mariotte - Mesures de pression ponctuelles avec python](https://youtu.be/k_7H3wbGkHA?si=6YUrwszzvmSZ9OEC)
+- [Loi de Mariotte - Mesures de pression ponctuelles avec Jupyter](https://youtu.be/oGAZk-o1qiE?si=hlrxQBMGzxCnOfiQ)
 
 ### Evolution de la température d'un corps en contact avec un thermostat
 Un exemple de `mesure temporelles lentes` qui utilise un capteur de température et implémente sa fonction de transfert. Conforme au programme de la spécialité physique-chimie en terminale.
