@@ -1,4 +1,4 @@
-## Duinolab - pduino - utilitaire de mesures arduino.
+## Duinolabo - pduino - utilitaire de mesures arduino.
 
 `pduino` est un module qui simplifie considérablement la réalisation de _mesures temporelles_ ou _point par point_ à l'aide d'une carte _Arduino_.D
 

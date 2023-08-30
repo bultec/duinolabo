@@ -13,13 +13,13 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 
-# Duinolab
+# Duinolabo
 
-`Duinolab` est un module à destination des enseignants de physique chimie et de biologie qui permet la réalisation sous _python_ de systèmes de mesures utilisant la carte _Arduino_.
+`Duinolabo` est un module à destination des enseignants de physique chimie et de biologie qui permet la réalisation sous _python_ de systèmes de mesures utilisant la carte _Arduino_.
 
 Ce module est très efficace et **simplifie considérablement** la réalisation de _mesures temporelles_ ou _point par point_ à l'aide d'une carte _Arduino_.
 
-`Duinolab ` est constitué de deux bibliothèques :
+`Duinolabo ` est constitué de deux bibliothèques :
 - `pduino` qui fonctionne sous python
 - `juduino` qui permet de créer très simplement des systèmes d'interfaces de mesures graphiques sous jupyter.
 

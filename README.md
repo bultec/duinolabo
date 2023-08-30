@@ -1,10 +1,10 @@
-# Duinolab
+# Duinolabo
 
-`Duinolab` est un module à destination des enseignants de physique chimie et de biologie qui permet la réalisation sous _python_ de systèmes de mesures utilisant la carte _Arduino_.
+`Duinolabo` est un module à destination des enseignants de physique chimie et de biologie qui permet la réalisation sous _python_ de systèmes de mesures utilisant la carte _Arduino_.
 
 Ce module est très efficace et **simplifie considérablement** la réalisation de _mesures temporelles_ ou _point par point_ à l'aide d'une carte _Arduino_.
 
-`Duinolab ` est constitué de deux bibliothèques :
+`Duinolabo ` est constitué de deux bibliothèques :
 - `pduino` qui fonctionne sous python
 - `juduino` qui permet de créer très simplement des systèmes d'interfaces de mesures graphiques sous jupyter.
 
@@ -48,8 +48,8 @@ GNU General Public License v3.0
 Un exemple simple pour commencer : le document [commande_leds](./docs/commande_leds/commande_leds.md) permet de prendre en main les bibliothèques `pduino` et éventuellement `juiduino` en allumant des leds.
 
 ##### Vidéos de démonstration 
-- [Duinolab - Prise en main - Commande de leds](https://youtu.be/ylRu36BADV0?si=N6qFN60a0jkB5NF6)
-- [Commandes de leds utilisant Jupyter sous Duinolab](https://youtu.be/8cVDwGVCikA?si=Rral8xjLYSj9t-5n)
+- [Duinolabo - Prise en main - Commande de leds](https://youtu.be/ylRu36BADV0?si=N6qFN60a0jkB5NF6)
+- [Commandes de leds utilisant Jupyter sous Duinolabo](https://youtu.be/8cVDwGVCikA?si=Rral8xjLYSj9t-5n)
 
 ### Célérité des ultrasons dans l'air - version 1
 
@@ -71,10 +71,10 @@ Un exemple de `mesure temporelles lentes ou rapides` conforme au programme de la
 
 ##### Vidéos de démonstration 
 
-- [Mesures Arduino sur un circuit RC en langage python](https://youtu.be/vvdRD067q5k)
-- [Mesures Arduino sur un circuit RC sous Jupyter](https://youtu.be/fMzpocO1Jao)
-- [Charge rapide et déclenchée d'un condensateur en python](https://youtu.be/K7szEpL1Emk)
-- [Charge rapide et déclenchée d'un condensateur sous Jupyter](https://youtu.be/I5FYPdSJ3KM)
+- [Mesures Arduino sur un circuit RC en langage python](https://youtu.be/OjGNy7Ilt34?si=ANy3mu_vvgNzEa9O)
+- [Mesures Arduino sur un circuit RC sous Jupyter](https://youtu.be/2p_p6vEm0SE?si=005Ij-iCH5Erwyhk)
+- [Charge rapide et déclenchée d'un condensateur en python](https://youtu.be/-3oRcjGYXro?si=tWH72LcwHsWh2Kd0)
+- [Charge rapide et déclenchée d'un condensateur sous Jupyter](https://youtu.be/ECt2jFk4a60?si=BKC8fsqc-JioHCbU)
 
 ### Célérité des ultrasons dans l'air - version 2
 Un exemple de `mesure temporelles très rapides` conforme au programme de physique-chimie en seconde.

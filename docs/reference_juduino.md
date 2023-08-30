@@ -1,5 +1,5 @@
 
-## Duinolab - juduino  - mesures arduino sous Jupyter
+## Duinolabo - juduino  - mesures arduino sous Jupyter
 
 `juduino` permet de créer très simplement des systèmes d'interfaces de mesures graphiques sous jupyter en utilisant le module `pduino`.
 
