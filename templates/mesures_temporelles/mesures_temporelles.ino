@@ -15,16 +15,16 @@ void setup() {
   delay(1);
 }
 
-void mesures(int command) {
+void mesures(String chaine) {
   unsigned long dt = t_total / (N_PTS - 1); //en ms
   unsigned long temps_depart = millis();
   unsigned long t_mesure;
   //à modifier
   int ma_mesure;
-  if (command == 1) {
+  if (chaine == "...") {
     ...
   }
-  if (command == 2) {
+  if (chaine == "...") {
     ...
   }
   while (millis() - temps_depart <= t_total) {
@@ -45,21 +45,11 @@ void loop() {
    */
   if (Serial.available()) {
     String chaine = Serial.readString();
-    int ok = 0;
-    if (chaine=="mesure") {
-      ok = 1;
-      int une_mesure = mesure(1);
-      Serial.println(une_mesure);      
+    if ((chaine=="...") or (chaine=="...")) {
+      mesures(chaine);
     }
-    if (chaine=="...") {
-      ok = 1;
-      ...;       
-    }
-    if (chaine=="...") {
-      ok = 1;
-      ...;        
-    }
-    if (ok==0) 
-      Serial.println("Commande non reconnue");   
+    else {
+      Serial.println("Commande non reconnue");
+    }   
   }
 }
