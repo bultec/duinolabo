@@ -67,6 +67,34 @@ def lit_fichier(fichier):
     f.close()
     return tuple(sortie)
 
+def liste_valeurs(nom, tab, n=0):
+    ''' renvoie une chaine de caractères du type 'nom = [v1, v2, ...]'
+        permettant de récupérer une liste de mesures sous forme de copier-collé
+        entrées : nom -> str : le nom du tableau 
+                  tab -> list: la liste (tableau) de valeurs
+                  n -> int   : le nombre de caractère par ligne d'affichage
+                               si n=0, il n' a pas de passage à la ligne lors de l'affichage
+        exemple : print(liste_valeurs('E', E))
+              ou  print(liste_valeurs('E', E, 70))
+    '''
+    entete = '{} = ['.format(nom)
+    s = entete
+    compteur = len(s)
+    espaces = ' '*(len(nom) + 4)
+    for v in tab:
+        ls = '{}, '.format(v)
+        s += ls
+        if n!=0:
+            compteur += len(ls)
+            if compteur > n:
+                ls = '\n' + espaces
+                s += ls
+                compteur = len(ls)
+    if n!=0 and compteur == len(ls):
+        return s[:-(len(s) - s.rfind(','))] + ']'
+    else:
+        return s[:-2] + ']'
+
 def affiche_graphe(titre, label_x, label_y, donnees, taille=None):
     ''' affiche le graphe
         entrée : titre -> str : le titre du graphe

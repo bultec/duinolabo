@@ -29,11 +29,21 @@ Les mesures peuvent être stockées dans un fichier csv pour exploitation utéri
                  args -> list :  les listes (tableaux) de données à enregistrer
     exemple : ecrit_fichier_csv('condensateur.csv', t, E, uc)
     
-### lit_fichier(fichier):
+### lit_fichier(fichier)
     Lit le fichier de mesures et le stocke dans des tableaux
     entrée : fichier -> str : nom du fichier (avec extension .csv)
     sortie -> tuple :  les listes (tableaux) de données
     exemple: t, E, u = lit_fichier('condensateur.csv')
+
+### liste_valeurs(nom, tab, n=0)
+    renvoie une chaine de caractères du type 'nom = [v1, v2, ...]'
+    permettant de récupérer une liste de mesures sous forme de copier-collé
+    entrées : nom -> str : le nom du tableau 
+              tab -> list: la liste (tableau) de valeurs
+              n -> int   : le nombre de caractère par ligne d'affichage
+                           si n=0, il n' a pas de passage à la ligne lors de l'affichage
+    exemple : print(liste_valeurs('E', E))
+              ou  print(liste_valeurs('E', E, 70))
 
 ### affiche_graphe(titre, label_x, label_y, donnees, taille=None)
     affiche le graphe
