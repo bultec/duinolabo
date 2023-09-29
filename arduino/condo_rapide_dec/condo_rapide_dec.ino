@@ -28,7 +28,7 @@
  * commande acceptée: charge
  */
 
-#define TEMPS 164
+#define TEMPS 80
 #define N_PTS 50
 
 const int pin_declenchement = 7;

@@ -29,7 +29,7 @@ Schéma du montage
 
 from pduino import *
 
-port = 'COM21'
+port = 'COM9'
 
 def affiche(T):
     '''

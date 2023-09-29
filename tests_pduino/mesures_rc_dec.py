@@ -33,7 +33,7 @@ sys.path.insert(0, "..")
 
 from pduino import *
 
-port = 'COM21'
+port = 'COM9'
 
 def affiche(T):
     '''
@@ -60,6 +60,13 @@ try:
                 fichier = '{}_condo.csv'.format(last_command)
                 ecrit_fichier_csv(fichier, t, E, uc)
                 print('fichier {} créé'.format(fichier))
+            else:
+                print('pas de mesures effectuées')
+        elif command == 'affiche':
+            if len(t) > 0 :
+                print(liste_valeurs("t", t, 80))
+                print(liste_valeurs("E", E, 80))
+                print(liste_valeurs("uc", uc, 80))
             else:
                 print('pas de mesures effectuées')
         else:
