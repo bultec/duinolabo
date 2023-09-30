@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: juduino
-Version: 0.0.dev1
+Version: 1.0.0b1
 Summary: Interface Jupyter de communication série avec une carte Arduino
 Author: Philippe Campion
 License: GNU GENERAL PUBLIC LICENSE Version 3

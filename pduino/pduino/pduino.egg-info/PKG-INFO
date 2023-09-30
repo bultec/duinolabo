@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pduino
-Version: 0.0.dev2
+Version: 1.0.0b1
 Summary: Communication serie avec une carte Arduino
 Author: Philippe Campion
 License: GNU GENERAL PUBLIC LICENSE Version 3
