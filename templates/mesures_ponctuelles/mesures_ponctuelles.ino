@@ -30,21 +30,17 @@ void loop() {
    */
   if (Serial.available()) {
     String chaine = Serial.readString();
-    int ok = 0;
     if (chaine=="mesure") {
-      ok = 1;
       int une_mesure = get_mesure();
       Serial.println(une_mesure);      
     }
-    if (chaine=="...") {
-      ok = 1;
+    else if (chaine=="...") {
       ...;       
     }
-    if (chaine=="...") {
-      ok = 1;
+    else if (chaine=="...") {
       ...;        
     }
-    if (ok==0) 
+    else
       Serial.println("Commande non reconnue");   
   }
 }
