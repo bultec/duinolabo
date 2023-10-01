@@ -30,7 +30,7 @@ try:
         elif command == 'sauve':
             if len(t) > 0 :
                 fichier = '....csv'
-                ecrit_fichier_csv(fichier, t, E, uc)
+                ecrit_fichier_csv(fichier, t, ..., ...)
                 print('fichier {} créé'.format(fichier))
             else:
                 print('pas de mesures effectuées')
